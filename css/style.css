@@ -11,9 +11,49 @@ body {
   font-family: Roboto, sans-serif, serif;
   color: var(--text-color);
   line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 0;
 }
 
 /* Header */
+
+.page-header {
+}
+
+.container.main-nav {
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   text-decoration: none;
@@ -32,16 +72,33 @@ body {
   letter-spacing: 0.78px;
 }
 
-.list {
+.nav-list.list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  margin-left: 93px;
+
+  list-style: none;
+}
+
+.nav-list .item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .item {
-  list-style: none;
 }
 
 .nav-link {
   text-decoration: none;
   font-weight: 500;
+  font-size: 14px;
   letter-spacing: 0.28px;
   color: var(--text-color);
 }
@@ -51,8 +108,29 @@ body {
   color: var(--blue-color);
 }
 
-.list .current {
+.nav-list .current {
   color: var(--blue-color);
+}
+
+.secondary-nav {
+  margin-left: auto;
+}
+
+.info-nav {
+  display: flex;
+}
+
+.info-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.info-item {
+  color: var(--opacity-text);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+
+  text-decoration: none;
 }
 
 .info-links {
@@ -72,9 +150,13 @@ body {
 
 .hero-section {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--white-text);
   font-size: 44px;
 
@@ -84,7 +166,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero-button {
+.button {
   color: var(--white-text);
   font-size: 16px;
   font-weight: 700;
@@ -96,88 +178,144 @@ body {
   border-radius: 4px;
   background: var(--blue-color);
 
-  width: 216px;
-  height: 50px;
+  min-width: 200px;
+
+  padding: 10px 24px;
 
   cursor: pointer;
 }
 
-.hero-button:focus {
+.button:focus {
 }
 
-/* Qualities */
+/* Qualities section */
 
 .qualities {
 }
 
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
+.qualities.section {
 }
 
 .column-list {
-  list-style: none;
+  display: flex;
 }
 
-.column-title {
-  color: var(--text-color);
-  font-size: 14px;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
+.list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.list-item p {
+.list-item {
+  padding: 0;
+  margin: 0;
+  width: 270px;
+
   color: var(--opacity-text);
   line-height: 1.7;
   letter-spacing: 0.42px;
   font-size: 14px;
 }
 
-/* About us */
-/* .section-title in Qualities */
+.column-title {
+  padding: 0;
+  margin: 0;
+
+  margin-bottom: 10px;
+
+  color: var(--text-color);
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.column-description {
+  padding: 0;
+  margin: 0;
+}
+
+/* About-us section */
 
 .about-us {
 }
 
+.about-us.section {
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
 .image-list {
-  list-style: none;
+  display: flex;
 }
 
-.image-item {
+.image-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-/* Our Team */
-/* .section-title in Qualities */
+/* Our team section */
 
 .our-team {
   background: #f5f4fa;
 }
 
-.team-list {
-  list-style: none;
+.our-team.section {
 }
 
-.team.card {
+.team-list {
+  display: flex;
+}
+
+.team-card {
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+
 .title-team-card {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 10px;
+
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
 }
 
 .description-card {
+  margin: 0;
+  padding: 0;
+
   color: var(--opacity-text);
   font-size: 16px;
   letter-spacing: 0.48px;
 }
 
+.info {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* Footer */
+
+.page-footer {
+  background: var(--bg-hero-footer);
+}
 
 .logo-footer {
   color: var(--white-text);
@@ -186,10 +324,6 @@ body {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
-}
-
-.page-footer {
-  background: var(--bg-hero-footer);
 }
 
 .address-text {
