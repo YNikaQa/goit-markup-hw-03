@@ -4,6 +4,10 @@
     <!-- Заголовок сторінки у браузері -->
     <title>WebStudio</title>
     <!-- Підключаєм CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Кодування сторінки -->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -35,20 +39,16 @@
           </ul>
         </nav>
 
-        <div class="secondary-nav">
-          <ul class="info-nav list">
-            <li class="info-item">
-              <a class="info-links" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="info-item">
-              <a class="info-links" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="info-nav list">
+          <li class="info-item">
+            <a class="info-links" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="info-item">
+            <a class="info-links" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- Головний контент/блоки сторінки -->
@@ -56,34 +56,31 @@
       <section class="filter section">
         <div class="container">
           <!-- <h1 class="filter-title">Portfolio Filter</h1> -->
-          <div class="tabs">
-            <ul class="nav-filter center">
-              <li class="button-filter">
-                <button class="button-nav" type="button">Усі</button>
-              </li>
-              <li class="button-filter">
-                <button class="button-nav" type="button">Веб-сайти</button>
-              </li>
-              <li class="button-filter">
-                <button class="button-nav" type="button">Додатки</button>
-              </li>
-              <li class="button-filter">
-                <button class="button-nav" type="button">Дизайн</button>
-              </li>
-              <li class="button-filter">
-                <button class="button-nav" type="button">Маркетинг</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="container">
+          <ul class="nav-filter center">
+            <li class="button-filter">
+              <button class="button-nav" type="button">Усі</button>
+            </li>
+            <li class="button-filter">
+              <button class="button-nav" type="button">Веб-сайти</button>
+            </li>
+            <li class="button-filter">
+              <button class="button-nav" type="button">Додатки</button>
+            </li>
+            <li class="button-filter">
+              <button class="button-nav" type="button">Дизайн</button>
+            </li>
+            <li class="button-filter">
+              <button class="button-nav" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
           <ul class="listing">
             <li class="img-card">
               <a class="card-link" href="#">
                 <img
                   src="./images/portfolio/img_laptop.jpg"
                   alt="laptop"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <div class="text-info">
@@ -97,7 +94,7 @@
                 <img
                   src="./images/portfolio/img_basket.jpg"
                   alt="basket"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <div class="text-info">
@@ -113,7 +110,7 @@
                 <img
                   src="./images/portfolio/img_seafood.jpg"
                   alt="seafood"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <div class="text-info">
@@ -127,7 +124,7 @@
                 <img
                   src="./images/portfolio/img_headphones.jpg"
                   alt="headphones"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <div class="text-info">
@@ -141,7 +138,7 @@
                 <img
                   src="./images/portfolio/img_boxs.jpg"
                   alt="boxes"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <div class="text-info">
@@ -155,7 +152,7 @@
                 <img
                   src="./images/portfolio/img_computer.jpg"
                   alt="computer"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <div class="text-info">
@@ -169,7 +166,7 @@
                 <img
                   src="./images/portfolio/img_magazine.jpg"
                   alt="magazine"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <div class="text-info">
@@ -183,7 +180,7 @@
                 <img
                   src="./images/portfolio/img_label.jpg"
                   alt="label tag"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <div class="text-info">
@@ -197,7 +194,7 @@
                 <img
                   src="./images/portfolio/img_site.jpg"
                   alt="site"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <div class="text-info">
@@ -218,10 +215,12 @@
         </a>
         <address class="address-text">
           м. Київ, пр-т Лесі Українки, 26
-          <a class="footer-links" href="mailto:info@devstudio.com"
+          <a class="footer-links first" href="mailto:info@devstudio.com"
             >info@devstudio.com
           </a>
-          <a class="footer-links" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="footer-links second" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </address>
       </div>
     </footer>
